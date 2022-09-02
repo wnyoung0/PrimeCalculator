@@ -1,2 +1,2 @@
-# prime calculator
+# 소수는 위대하다
 . .
