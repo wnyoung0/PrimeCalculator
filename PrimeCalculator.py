@@ -35,13 +35,13 @@ class window:
             except:
                 return self.num_entry.get()
         def isprime(self,num):
-            if num<=81111100000000:
+            if num<=8000000000:
                 return ('{} is prime'.format(num) if p_test(num) else '{} is not prime'.format(num))
             else:
                 return '컴퓨터가 불쌍하지 않으세요?'
         def golh(self,num=0):        
             try:
-                if num>81100000000:
+                if num>5100000000:
                     return ('cpu가 연산을 가부했습니다.')
                 if num<=2:
                     return ('뭐지')
@@ -62,7 +62,7 @@ class window:
         def facn(self,num=2):
             
             try:
-                if num>81100000000:
+                if num>5100000000:
                     return ('직접 계산해 보는것을 추천합니다.')
                 if num<=2:
                     return (num)    
