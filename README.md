@@ -1,2 +1,2 @@
-# goldbach-calculator
+# prime calculator
 . .
