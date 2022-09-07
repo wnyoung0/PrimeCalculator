@@ -44,15 +44,15 @@ class window:
             if num<=8000000000:
                 return ('{} is prime'.format(num) if p_test(num) else '{} is not prime'.format(num))
             else:
-                return '컴퓨터가 불쌍하지 않으세요?'
+                return '직접 계산해 보는것을 추천합니다.'
         def golh(self,num=0):        
             try:
                 if num>5100000000:
-                    return ('cpu가 연산을 가부했습니다.')
+                    return ('직접 계산해 보는것을 추천합니다.')
                 if num<=2:
-                    return ('뭐지')
+                    return ('뭐지 버근가')
                 elif num%2!=0:
-                    return ('홀수에 대한 골드바흐 파티션은 없단다')
+                    return ('짝수를 입력하세요.')
                 else:
                     b=(int)(num/2)
                     a=b
@@ -64,7 +64,7 @@ class window:
                             a=a-1
                             b=b+1
             except Exception as e:
-                return '뭐지'
+                return '뭐지 버근가'
         def facn(self,num=2):
             
             try:
