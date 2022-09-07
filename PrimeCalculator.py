@@ -41,10 +41,13 @@ class window:
             except:
                 return self.num_entry.get()
         def isprime(self,num):
-            if num<=8000000000:
-                return ('{} is prime'.format(num) if p_test(num) else '{} is not prime'.format(num))
-            else:
-                return '직접 계산해 보는것을 추천합니다.'
+            try:
+                if num<=8000000000:
+                    return ('{} is prime'.format(num) if p_test(num) else '{} is not prime'.format(num))
+                else:
+                    return '직접 계산해 보는것을 추천합니다.'
+            except:
+                return '뭐지버근가'
         def golh(self,num=0):        
             try:
                 if num>5100000000:
@@ -94,7 +97,7 @@ class window:
                             d = d + 1
                     return rstr
             except Exception as e:
-                return('뭐지')
+                return('뭐지 버근가')
         def displayIsprime(self):
             self.result_label.config(text=self.isprime(self.getstring()))
         def displayGolh(self):
