@@ -1,6 +1,8 @@
 from tkinter import *
 
-def p_test(n):#returns 1if isprime
+def p_test(n):
+    """returns 1if isprime
+    """
     try:
         if n>1:
             for i in range(2,int(n**0.5)+1):
