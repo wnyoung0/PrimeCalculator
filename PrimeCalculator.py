@@ -50,7 +50,7 @@ class window:
                 if num>5100000000:
                     return ('직접 계산해 보는것을 추천합니다.')
                 if num<=2:
-                    return ('뭐지 버근가')
+                    return ('입력값이 너무 작습니다.')
                 elif num%2!=0:
                     return ('짝수를 입력하세요.')
                 else:
