@@ -22,10 +22,16 @@ class window:
             self.num_entry = Entry(master,bg='grey',textvariable=self.num_value)
             self.num_entry.config(width=10,font=("맑은고딕 25"))
             self.result_label =  Label(master,bg='white',fg='black',width='25',height='7',text=' ',font=("맑은고딕",30),wraplength=600)
+            self.pr= Button(master, width=26,command=self.displayIsprime,bg='lightblue',height=2,text='소수 검사')
+            self.go= Button(master, width=26,command=self.displayGolh,bg='darkblue',height=2,text='골드바흐 파티션',fg='white')
+            self.ff = Button(master, width=26,command=self.displayFacn,bg='black',height=2,text='소인수분해',fg='white')
            # master.bind('<Return>',self.delstr)
         def delstr(self):
             self.num_value.set('')
         def pak(self):
+            self.pr.place(x=430)
+            self.go.place(x=430,y=41)
+            self.ff.place(x=430,y=82)
             self.num_entry.place(x=200,y=0)
             self.result_label.place(x=0,y=150)
             self.num_value.set('')
@@ -101,12 +107,7 @@ class window:
 root3 = Tk()
 aa = window(root3)
 
-pr= Button(root3, width=26,command=aa.displayIsprime,bg='lightblue',height=2,text='소수 검사')
-go= Button(root3, width=26,command=aa.displayGolh,bg='darkblue',height=2,text='골드바흐 파티션',fg='white')
-ff = Button(root3, width=26,command=aa.displayFacn,bg='black',height=2,text='소인수분해',fg='white')
-pr.place(x=430)
-go.place(x=430,y=41)
-ff.place(x=430,y=82)
+
 aa.pak()
 
 
